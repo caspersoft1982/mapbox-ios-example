@@ -315,7 +315,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mapbox Example/Mapbox Example-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"";
 				INFOPLIST_FILE = "Mapbox Example/Mapbox Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
@@ -399,7 +399,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mapbox Example/Mapbox Example-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"";
 				INFOPLIST_FILE = "Mapbox Example/Mapbox Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
@@ -422,7 +422,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mapbox Example/Mapbox Example-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"";
 				INFOPLIST_FILE = "Mapbox Example/Mapbox Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
