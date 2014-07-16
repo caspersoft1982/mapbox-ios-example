@@ -38,7 +38,7 @@
 {
     [mapView removeAllAnnotations];
 
-    RMMBTilesSource *source = (RMMBTilesSource *)mapView.tileSource;
+    RMMapboxSource *source = (RMMapboxSource *)mapView.tileSource;
 
     if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [source supportsInteractivity])
     {
