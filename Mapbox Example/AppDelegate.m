@@ -11,6 +11,8 @@
 #import "OfflineLayerViewController.h"
 #import "InteractiveLayerViewController.h"
 
+#import "Mapbox.h"
+
 @implementation AppDelegate
 
 @synthesize window;
@@ -18,6 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    [[RMConfiguration configuration] setAccessToken:@"pk.eyJ1IjoianVzdGluIiwiYSI6IlpDbUJLSUEifQ.4mG8vhelFMju6HpIY-Hi5A"];
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
