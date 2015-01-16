@@ -11,13 +11,21 @@
 
 #import "NSData+Base64.h"
 
+// This map style was built in TileMill, so it doesn't have automatic server-side retina
+// mode unlike the other, OpenStreetMap-based maps in this project. 
+
+#define kRegularGeographyClassMapID @"examples.map-zmy97flj"
+#define kRetinaGeographyClassMapID  @"examples.1fjyxmhi"
+
 @implementation InteractiveLayerViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    RMMapboxSource *interactiveSource = [[RMMapboxSource alloc] initWithMapID:@"examples.map-zmy97flj"];
+    NSString *mapID = ([[UIScreen mainScreen] scale] > 1 ? kRetinaGeographyClassMapID : kRegularGeographyClassMapID);
+
+    RMMapboxSource *interactiveSource = [[RMMapboxSource alloc] initWithMapID:mapID];
 
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:interactiveSource];
 
